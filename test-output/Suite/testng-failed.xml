@@ -8,14 +8,47 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="tests.TC001_SignUpTest">
+      <class name="tests.TC006_ContactDeleteTest">
+        <methods>
+          <include name="lauchBrowser"/>
+          <include name="close"/>
+          <include name="verifyDeleteContact" invocation-numbers="0 1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TC006_ContactDeleteTest -->
+      <class name="tests.TC004_ContactDisplayTest">
         <methods>
           <include name="setup"/>
-          <include name="signUpTest"/>
+          <include name="verifyContactDetailsDisplay"/>
           <include name="lauchBrowser"/>
           <include name="close"/>
         </methods>
-      </class> <!-- tests.TC001_SignUpTest -->
+      </class> <!-- tests.TC004_ContactDisplayTest -->
+      <class name="tests.TC003_AddContactTest">
+        <methods>
+          <include name="addContactTest" invocation-numbers="0 1 2"/>
+          <include name="testAddContact"/>
+          <include name="setup"/>
+          <include name="lauchBrowser"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.TC003_AddContactTest -->
+      <class name="tests.TC005_ContactEditTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyEmptyFieldsRestriction"/>
+          <include name="lauchBrowser"/>
+          <include name="verifyContactEditFunctionality"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.TC005_ContactEditTest -->
+      <class name="tests.TC007_LogoutTest">
+        <methods>
+          <include name="lauchBrowser"/>
+          <include name="verifyLogoutFunctionality"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.TC007_LogoutTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

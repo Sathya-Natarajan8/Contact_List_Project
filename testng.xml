@@ -11,6 +11,12 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="tests.TC001_SignUpTest" />
+			<class name="tests.TC002_LoginTest" />
+			<class name="tests.TC003_AddContactTest"/>
+			<class name="tests.TC004_ContactDisplayTest"/>
+			<class name="tests.TC005_ContactEditTest"/>
+			<class name="tests.TC006_ContactDeleteTest"/>
+			<class name="tests.TC007_LogoutTest"/>
 		</classes>
 	</test> <!--
 	Test -->
